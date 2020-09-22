@@ -2,7 +2,7 @@
 
 _pkgname=qmlkonsole
 pkgname=$_pkgname-git
-pkgver=r52.02a3a8f
+pkgver=r55.beb96c8
 pkgrel=1
 pkgdesc="Terminal app for Plasma Mobile"
 arch=('aarch64')
