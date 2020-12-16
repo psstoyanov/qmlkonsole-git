@@ -3,7 +3,7 @@
 _pkgname=qmlkonsole
 pkgname=$_pkgname-git
 pkgver=r63.3742e22
-pkgrel=1
+pkgrel=2
 pkgdesc="Terminal app for Plasma Mobile"
 arch=('aarch64' 'x86_64')
 url="https://invent.kde.org/jbbgameich/qmlkonsole.git"
