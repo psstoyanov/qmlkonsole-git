@@ -1,0 +1,39 @@
+From 2cbb38878a721619aa4446bf89b638c00ee7d05e Mon Sep 17 00:00:00 2001
+From: PakoSt <kokotekilata@gmail.com>
+Date: Sat, 23 Jan 2021 16:03:00 +0000
+Subject: [PATCH] Add nano shortcuts to actions
+
+---
+ src/contents/ui/TerminalPage.qml | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+
+diff --git a/src/contents/ui/TerminalPage.qml b/src/contents/ui/TerminalPage.qml
+index 3138c24..0bfdc7d 100644
+--- a/src/contents/ui/TerminalPage.qml
++++ b/src/contents/ui/TerminalPage.qml
+@@ -22,6 +22,22 @@ Kirigami.Page {
+     globalToolBarStyle: Kirigami.Settings.isMobile ? Kirigami.ApplicationHeaderStyle.None : Kirigami.ApplicationHeaderStyle.ToolBar
+ 
+     contextualActions: [
++        Kirigami.Action {
++            text: i18n("Ctrl+X")
++            onTriggered: terminal.pressKey(Qt.Key_X, Qt.ControlModifier, true)
++        },
++        Kirigami.Action {
++            text: i18n("Ctrl+S")
++            onTriggered: terminal.pressKey(Qt.Key_S, Qt.ControlModifier, true)
++        },
++        Kirigami.Action {
++            text: i18n("Ctrl+O")
++            onTriggered: terminal.pressKey(Qt.Key_O, Qt.ControlModifier, true)
++        },
++        Kirigami.Action {
++            text: i18n("Ctrl+Z")
++            onTriggered: terminal.pressKey(Qt.Key_Z, Qt.ControlModifier, true)
++        },
+         Kirigami.Action {
+             icon.name: "edit-copy"
+             text: i18n("Copy")
+-- 
+2.30.0
+
